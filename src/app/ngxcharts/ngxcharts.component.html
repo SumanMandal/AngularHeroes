@@ -1,0 +1,23 @@
+<p>
+  ngxcharts works!
+</p>
+<div style="display: block;height:200px">
+<ngx-charts-line-chart [scheme]="lineChartColorScheme" [results]="lineChartMulti" [gradient]="lineChartGradient" [xAxis]="lineChartShowXAxis" [yAxis]="lineChartShowYAxis" [legend]="lineChartShowLegend" [showXAxisLabel]="lineChartShowXAxisLabel" [showYAxisLabel]="lineChartShowYAxisLabel" [xAxisLabel]="lineChartXAxisLabel" [yAxisLabel]="lineChartYAxisLabel" [autoScale]="lineChartAutoScale" [curve]="lineChartLineInterpolation" (select)="onSelect($event)"> </ngx-charts-line-chart>
+</div>
+<div style="display: block;height:200px">
+  our chart
+<ngx-charts-line-chart
+    
+[results]="data"
+[gradient]="gradient"
+[xAxis]="showXAxis"
+[yAxis]="showYAxis"
+[legend]="showLegend"
+[showXAxisLabel]="showXAxisLabel"
+[showYAxisLabel]="showYAxisLabel"
+[xAxisLabel]="xlabel"
+[yAxisLabel]="yAxisLabel"
+[autoScale]="autoScale"
+>
+</ngx-charts-line-chart>     
+</div>
